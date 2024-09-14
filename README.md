@@ -1,4 +1,4 @@
-Here’s a detailed API documentation template for your endpoints, including descriptions, request/response formats, and authentication requirements.
+Here’s a detailed documentation of API Tokens to create links or get information externally
 
 ---
 
@@ -54,17 +54,11 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 #### Response
 
-- **Status Code**: `201 Created`
+- **Status Code**: `200 Created`
 - **Body**:
 ```json
 {
-    "message": "Short link created successfully.",
-    "data": {
-        "shortLinkURL": "boot",
-        "firstPage": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css",
-        "secondPage": "https://www.npmjs.com/package/uuid",
-        "createdAt": "2024-09-14T12:00:00Z"
-    }
+    "message": "Link created successfully."
 }
 ```
 
@@ -100,12 +94,12 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 - **Body**:
 ```json
 {
-    "message": "Short link information retrieved successfully.",
+    "success": true,
     "data": {
         "shortLinkURL": "boot",
         "firstPage": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css",
         "secondPage": "https://www.npmjs.com/package/uuid",
-        "createdAt": "2024-09-14T12:00:00Z"
+        "createdAt": "2024-09-14T14:41:30.000Z",
     }
 }
 ```
@@ -145,8 +139,5 @@ curl -X POST http://clicktoallmylinks.com/api/info \
 
 - Ensure that the Bearer token is valid and has the necessary permissions to access the endpoints.
 - The `shortLinkURL` should be unique for each entry to avoid conflicts.
-- All timestamps are returned in ISO 8601 format.
 
 ---
-
-This documentation should provide your clients with a clear understanding of how to use your API, including the necessary authentication and request/response structures. Adjust any specific details as needed based on your implementation.
