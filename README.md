@@ -23,6 +23,7 @@ All requests to the API must include a Bearer Token in the Authorization header.
 ```
 Authorization: Bearer YOUR_ACCESS_TOKEN
 ```
+![image](https://github.com/user-attachments/assets/cf71f3f8-37c1-49b5-b25c-798198a3fffb)
 
 ## Endpoints
 
@@ -61,6 +62,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
     "message": "Link created successfully."
 }
 ```
+![image](https://github.com/user-attachments/assets/c0e92fe2-53de-4735-aea9-0825a23680a2)
 
 - **Error Responses**:
   - **400 Bad Request**: If the request body is invalid.
@@ -103,6 +105,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
     }
 }
 ```
+![image](https://github.com/user-attachments/assets/fed4fcfa-bc4d-438a-b2f2-fcef8571845d)
 
 - **Error Responses**:
   - **400 Bad Request**: If the request body is invalid.
